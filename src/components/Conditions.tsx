@@ -22,7 +22,7 @@ export function Conditions() {
             const Icon = conditionIcons[i];
             return (
               <article key={item.title} className="group bt-card flex h-full flex-col !p-0 overflow-hidden">
-                <div className="border-b border-bt-line bg-bt-sand px-6 py-5 transition-colors duration-300 group-hover:bg-[rgba(227,183,200,0.12)]">
+                <div className="w-full border-b border-bt-line bg-bt-sand px-6 py-5 transition-colors duration-300 group-hover:bg-[rgba(227,183,200,0.12)]">
                   <div className="flex items-start justify-between gap-3">
                     <span className="bt-icon-badge !bg-bt-card">
                       <Icon className="h-5 w-5" aria-hidden />

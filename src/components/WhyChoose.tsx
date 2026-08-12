@@ -7,7 +7,7 @@ export function WhyChoose() {
   const icons = [Focus, ShieldCheck, Clock, Zap, Zap, MapPin];
 
   return (
-    <section className="bt-section bt-section-alt">
+    <section id="why-choose" className="bt-section bt-section-alt">
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <Reveal>
           <SectionHeader
