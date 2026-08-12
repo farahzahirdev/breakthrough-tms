@@ -17,7 +17,7 @@ export function MedicationManagement() {
               </span>
               <h3 className="mt-6 !text-[#fdfcf9]">Comprehensive psychiatric support</h3>
               <p className="mt-3 text-sm leading-relaxed text-bt-lavender">
-                Medication management works alongside Deep TMS — not instead of it — for adults
+                Medication management works alongside Deep TMS, not instead of it, for adults
                 navigating complex depression and related conditions.
               </p>
             </div>

@@ -26,7 +26,7 @@ function VideoStoryCard({ story }: { story: Story }) {
         {playing ? (
           <iframe
             src={`https://www.youtube-nocookie.com/embed/${story.videoId}?autoplay=1&rel=0`}
-            title={`${story.name} — Deep TMS patient story from BrainsWay`}
+            title={`${story.name}: Deep TMS patient story from BrainsWay`}
             allow="autoplay; encrypted-media; picture-in-picture"
             allowFullScreen
             className="video-facade-iframe"

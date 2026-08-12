@@ -58,7 +58,7 @@ export const site = {
     inquiryForm: {
       id: "PLACEHOLDER_FORM",
       iframeId: "inline-PLACEHOLDER_FORM",
-      name: "Breakthrough TMS — Qualification Inquiry",
+      name: "Breakthrough TMS: Qualification Inquiry",
       title: "Find out if you Qualify",
       src: "https://go.4tms.com/widget/form/PLACEHOLDER_FORM",
       height: 1200,

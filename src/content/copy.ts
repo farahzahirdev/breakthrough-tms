@@ -18,7 +18,7 @@ export const copy = {
     headlineLine2: "For",
     headlineAccent: "Depression",
     subheadline:
-      "FDA-Cleared BrainsWay® Deep TMS – a noninvasive, medication-free treatment for depression and more.",
+      "FDA-Cleared BrainsWay® Deep TMS, a noninvasive, medication-free treatment for depression and more.",
     primaryCta: "Book Your Free Consultation",
     callCta: "Call Now",
     chips: [
@@ -54,7 +54,7 @@ export const copy = {
   whatIsTms: {
     eyebrow: "What Is TMS",
     headline: "What Is Deep TMS & How Does It Work?",
-    body: "Transcranial Magnetic Stimulation (TMS) uses focused magnetic pulses to stimulate brain networks involved in mood and behavior. With BrainsWay Deep TMS, a specialized helmet delivers treatment while you sit comfortably — awake, alert, and able to resume your day afterward.",
+    body: "Transcranial Magnetic Stimulation (TMS) uses focused magnetic pulses to stimulate brain networks involved in mood and behavior. With BrainsWay Deep TMS, a specialized helmet delivers treatment while you sit comfortably, awake, alert, and able to resume your day afterward.",
     points: [
       {
         title: "Noninvasive & drug-free",
@@ -83,7 +83,7 @@ export const copy = {
       {
         step: "02",
         title: "Motor threshold mapping",
-        body: "A brief calibration sets the right coil position and intensity — recalibrated as needed during your course.",
+        body: "A brief calibration sets the right coil position and intensity, recalibrated as needed during your course.",
       },
       {
         step: "03",
@@ -187,7 +187,7 @@ export const copy = {
     eyebrow: "About Us",
     headline: "Meet Dr. Artur Saakyan, MD",
     intro:
-      "Psychiatrist and founder of Breakthrough TMS. Dr. Saakyan leads our TMS-only clinic in Glendale — focused on clear answers, thoughtful care, and whether Deep TMS is right for you.",
+      "Psychiatrist and founder of Breakthrough TMS. Dr. Saakyan leads our TMS-only clinic in Glendale, focused on clear answers, thoughtful care, and whether Deep TMS is right for you.",
     highlight:
       "Your first visit is a conversation, not a rushed intake. We review your history, explain the process, and answer your questions before any decision.",
     languages: "English & Armenian",
@@ -196,11 +196,11 @@ export const copy = {
   whyChoose: {
     eyebrow: "Why Breakthrough TMS",
     headline: "A TMS-Only Clinic Built for Focus & Consistency",
-    body: "We specialize exclusively in Deep TMS — not a general clinic that offers TMS on the side. That focus means structured protocols, consistent care, and a team that knows this treatment inside and out.",
+    body: "We specialize exclusively in Deep TMS, not a general clinic that offers TMS on the side. That focus means structured protocols, consistent care, and a team that knows this treatment inside and out.",
     cards: [
       {
         title: "TMS-only focus",
-        body: "Dedicated exclusively to Deep TMS — structured protocols from consultation through your full course.",
+        body: "Dedicated exclusively to Deep TMS, with structured protocols from consultation through your full course.",
       },
       {
         title: "BrainsWay Deep TMS",
@@ -208,7 +208,7 @@ export const copy = {
       },
       {
         title: "20-minute sessions",
-        body: "Short, manageable visits designed to fit your schedule — Mon–Fri, 7 AM to 7 PM.",
+        body: "Short, manageable visits designed to fit your schedule. Open Mon–Fri, 7 AM to 7 PM.",
       },
       {
         title: "Noninvasive care",
@@ -227,7 +227,7 @@ export const copy = {
   insurance: {
     eyebrow: "Insurance",
     headline: "We Work With Major Insurance Plans",
-    body: "Breakthrough TMS accepts many commercial plans, Medicare, Medi-Cal, and TriWest. Coverage varies by plan — our team will help verify your benefits.",
+    body: "Breakthrough TMS accepts many commercial plans, Medicare, Medi-Cal, and TriWest. Coverage varies by plan. Our team will help verify your benefits.",
     payers: [
       { src: "/payers/uhc.svg", alt: "UnitedHealthcare", width: 174, height: 38, size: "base" as const },
       { src: "/payers/optum.svg", alt: "Optum", width: 122, height: 38, size: "base" as const },
@@ -257,14 +257,14 @@ export const copy = {
       },
       {
         title: "Start sessions",
-        body: "Short in-office sessions on a schedule designed to support progress — most take about 20 minutes or less.",
+        body: "Short in-office sessions on a schedule designed to support progress. Most take about 20 minutes or less.",
       },
     ],
   },
   location: {
     eyebrow: "Location & Hours",
     headline: "Deep TMS Therapy in Downtown Glendale",
-    body: "Our office is in the heart of Glendale, easily reached from the SR-134, SR-2, and I-5 freeways — with validated parking near Americana at Brand.",
+    body: "Our office is in the heart of Glendale, easily reached from the SR-134, SR-2, and I-5 freeways, with validated parking near Americana at Brand.",
     serving: "Serving Glendale, Burbank, Pasadena, North Hollywood, Sherman Oaks, and the wider San Fernando Valley.",
     parking: "Plenty of unreserved parking spots available. Parking will be validated.",
   },
@@ -305,7 +305,7 @@ export const copy = {
   bookConsult: {
     eyebrow: "Schedule",
     headline: "Book your Free Consultation",
-    body: "Choose a time that works for you. We'll review your symptoms, answer your questions about Deep TMS, and discuss next steps — no obligation.",
+    body: "Choose a time that works for you. We'll review your symptoms, answer your questions about Deep TMS, and discuss next steps with no obligation.",
     callPrompt: "Prefer to talk first?",
     inquiryLink: "Submit an inquiry instead",
   },
@@ -314,7 +314,7 @@ export const copy = {
     headline: "Find out if you Qualify",
     body: "Share a few details and our team will follow up to discuss candidacy, insurance verification, and whether Deep TMS may be right for you.",
     formTitle: "Qualification Inquiry",
-    formSubtitle: "Confidential — our team typically responds within one business day.",
+    formSubtitle: "Confidential. Our team typically responds within one business day.",
     bookLink: "Ready to pick a time? Book a consultation",
     trustLine: "Treatment eligibility is determined after an in-person evaluation. Individual results vary.",
   },
@@ -329,7 +329,7 @@ export const copy = {
     call: "Call",
   },
   footer: {
-    tagline: "FDA-cleared BrainsWay Deep TMS in Glendale, CA — serving the San Fernando Valley.",
+    tagline: "FDA-cleared BrainsWay Deep TMS in Glendale, CA, serving the San Fernando Valley.",
     disclaimer:
       "This website provides educational information only and is not medical advice. Breakthrough TMS does not provide emergency services. If you are in crisis, call 911 or dial 988 for the Suicide & Crisis Lifeline.",
     eligibility:
