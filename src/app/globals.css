@@ -246,6 +246,14 @@ html {
   box-shadow: 0 16px 40px -22px rgba(23, 26, 65, 0.2);
 }
 
+/* Over hero — glass nav so image shows through */
+.bt-nav-wrap:not(.is-scrolled) .bt-nav-bar {
+  background: rgba(253, 251, 247, 0.5);
+  border-color: rgba(253, 251, 247, 0.38);
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+}
+
 .bt-nav-pill {
   display: none;
   align-items: center;
@@ -425,18 +433,26 @@ html {
   .bt-nav-bar {
     justify-content: space-between;
     padding: 0.35rem 0.65rem 0.35rem 0.85rem;
-    background: rgba(253, 251, 247, 0.88);
-    border-color: rgba(23, 26, 65, 0.06);
+  }
+
+  .bt-nav-wrap:not(.is-scrolled) .bt-nav-bar {
+    background: rgba(253, 251, 247, 0.45);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: none;
+  }
+
+  .bt-nav-wrap.is-scrolled .bt-nav-bar {
+    background: rgba(253, 251, 247, 0.94);
+    border-color: rgba(23, 26, 65, 0.08);
     box-shadow: 0 8px 24px -18px rgba(23, 26, 65, 0.18);
   }
 
-  .bt-nav-bar.is-scrolled {
-    background: rgba(253, 251, 247, 0.94);
-    border-color: rgba(23, 26, 65, 0.08);
+  .bt-nav-wrap:not(.is-scrolled) .bt-nav-menu-btn {
+    background: rgba(255, 254, 252, 0.5);
+    border-color: rgba(255, 255, 255, 0.45);
   }
 
-  .bt-nav-menu-btn {
-    margin-left: auto;
+  .bt-nav-wrap.is-scrolled .bt-nav-menu-btn {
     border-color: rgba(23, 26, 65, 0.1);
     background: rgba(255, 254, 252, 0.95);
   }
@@ -445,12 +461,15 @@ html {
   position: relative;
   overflow: hidden;
   background: #fdf8fb;
-  min-height: clamp(640px, 78vh, 920px);
+  margin-top: -5.25rem;
+  padding-top: 5.25rem;
+  min-height: clamp(700px, 84vh, 980px);
 }
 
 .bt-hero-bg {
   position: absolute;
   inset: 0;
+  z-index: 0;
 }
 
 .bt-hero-bg-img {
@@ -467,13 +486,15 @@ html {
 .bt-hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background:
     linear-gradient(
       95deg,
       rgba(253, 251, 247, 0.97) 0%,
-      rgba(253, 251, 247, 0.92) 38%,
-      rgba(253, 251, 247, 0.55) 58%,
-      rgba(253, 251, 247, 0.08) 78%,
+      rgba(253, 251, 247, 0.93) 34%,
+      rgba(247, 243, 234, 0.76) 50%,
+      rgba(253, 251, 247, 0.38) 64%,
+      rgba(253, 251, 247, 0.06) 80%,
       transparent 100%
     ),
     linear-gradient(to top, rgba(253, 251, 247, 0.85) 0%, transparent 28%);
@@ -482,7 +503,7 @@ html {
 
 .bt-hero-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .bt-hero-copy {
@@ -511,7 +532,7 @@ html {
 
 @media (max-width: 1023px) {
   .bt-hero {
-    min-height: auto;
+    min-height: clamp(580px, 72vh, 720px);
   }
 
   .bt-hero-bg-img {
@@ -522,9 +543,9 @@ html {
     background:
       linear-gradient(
         180deg,
-        rgba(253, 251, 247, 0.96) 0%,
-        rgba(253, 251, 247, 0.88) 42%,
-        rgba(253, 251, 247, 0.72) 100%
+        rgba(253, 251, 247, 0.97) 0%,
+        rgba(253, 251, 247, 0.9) 42%,
+        rgba(253, 251, 247, 0.76) 100%
       );
   }
 }
