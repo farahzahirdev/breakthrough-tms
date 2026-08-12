@@ -34,7 +34,7 @@ export function GhlInquiryForm() {
       data-layout-iframe-id={form.iframeId}
       data-form-id={form.id}
       className="block w-full border-0"
-      style={{ width: "100%", height: form.height, border: "none" }}
+      style={{ width: "100%", height: form.height, border: "none", borderRadius: "20px" }}
     />
   );
 }

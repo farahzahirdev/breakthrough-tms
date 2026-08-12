@@ -20,12 +20,12 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Pending configuration
 
-When calendar and form embeds are ready, update `src/content/site.ts`:
+When ready, update `src/content/site.ts`:
 
-- `ghl.calendar` — GHL booking widget IDs
-- `ghl.inquiryForm` — GHL qualification form IDs
-- `phone` / `phoneHref` — Twilio tracking number
-- `mapsEmbedUrl` / `mapsUrl` — Google Maps links
+- `phone` / `phoneHref` — Twilio tracking number (if different from main line)
+- `mapsEmbedUrl` / `mapsUrl` — Google Maps links (if needed)
+
+GHL form and calendar embeds are configured under `site.ghl`.
 
 ## Page sections
 

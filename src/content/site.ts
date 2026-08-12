@@ -47,23 +47,28 @@ export const site = {
     storyCathy: "/images/story-cathy.webp",
     storyVictor: "/images/story-victor.webp",
   },
+  /**
+   * GHL embeds (Rise4 / go.4tms.com)
+   * Form: l4pQcMVB9DBxWEQIPMn3
+   * Calendar: 7x3H9r61IKrxp5Km4qts
+   */
   ghl: {
     calendarName: "Book your Free Consultation",
     origin: "https://go.4tms.com",
     embedScriptSrc: "https://go.4tms.com/js/form_embed.js",
     calendar: {
-      id: "PLACEHOLDER_CALENDAR",
-      iframeId: "PLACEHOLDER_CALENDAR_IFRAME",
-      src: "https://go.4tms.com/widget/booking/PLACEHOLDER_CALENDAR",
+      id: "7x3H9r61IKrxp5Km4qts",
+      iframeId: "7x3H9r61IKrxp5Km4qts_1786548210328",
+      src: "https://go.4tms.com/widget/booking/7x3H9r61IKrxp5Km4qts",
       title: "Book your Free Consultation",
     },
     inquiryForm: {
-      id: "PLACEHOLDER_FORM",
-      iframeId: "inline-PLACEHOLDER_FORM",
-      name: "Breakthrough TMS: Qualification Inquiry",
-      title: "Find out if you Qualify",
-      src: "https://go.4tms.com/widget/form/PLACEHOLDER_FORM",
-      height: 1200,
+      id: "l4pQcMVB9DBxWEQIPMn3",
+      iframeId: "inline-l4pQcMVB9DBxWEQIPMn3",
+      name: "TMS: New Web Inquiry + Params",
+      title: "TMS: New Web Inquiry + Params",
+      src: "https://go.4tms.com/widget/form/l4pQcMVB9DBxWEQIPMn3",
+      height: 2142,
     },
   },
 } as const;
