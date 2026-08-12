@@ -7,8 +7,17 @@ import { site } from "@/content/site";
 import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
-function FaqItem({ question, answer }: { question: string; answer: string }) {
-  const [open, setOpen] = useState(false);
+function FaqItem({
+  question,
+  answer,
+  open,
+  onToggle,
+}: {
+  question: string;
+  answer: string;
+  open: boolean;
+  onToggle: () => void;
+}) {
   const panelId = useId();
 
   return (
@@ -18,7 +27,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         className="faq-trigger"
         aria-expanded={open}
         aria-controls={panelId}
-        onClick={() => setOpen((o) => !o)}
+        onClick={onToggle}
       >
         <span className="faq-question">{question}</span>
         <span className="faq-icon" aria-hidden>
@@ -35,6 +44,8 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export function Faq() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <section id="faq" className="bt-section bt-section-alt">
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
@@ -62,8 +73,16 @@ export function Faq() {
             />
 
             <div className="faq-list mt-8 lg:mt-10">
-              {copy.faq.items.map((item) => (
-                <FaqItem key={item.q} question={item.q} answer={item.a} />
+              {copy.faq.items.map((item, index) => (
+                <FaqItem
+                  key={item.q}
+                  question={item.q}
+                  answer={item.a}
+                  open={openIndex === index}
+                  onToggle={() =>
+                    setOpenIndex((current) => (current === index ? null : index))
+                  }
+                />
               ))}
             </div>
           </Reveal>
