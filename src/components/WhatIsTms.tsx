@@ -17,10 +17,10 @@ export function WhatIsTms() {
             <div className="overflow-hidden rounded-brand shadow-card">
               <div className="relative aspect-[4/5]">
                 <Image
-                  src="/images/reception-desk.webp"
-                  alt="Breakthrough TMS reception desk in Glendale"
+                  src={site.images.patientInRoom}
+                  alt="Patient receiving BrainsWay Deep TMS treatment"
                   fill
-                  className="object-cover object-[50%_34%] transition-transform duration-700 ease-brand hover:scale-[1.02]"
+                  className="object-cover object-center transition-transform duration-700 ease-brand hover:scale-[1.02]"
                   sizes="(max-width: 1024px) 100vw, 560px"
                 />
               </div>

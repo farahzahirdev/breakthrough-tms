@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CheckCircle2, Pill } from "lucide-react";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
@@ -11,16 +12,31 @@ export function MedicationManagement() {
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
-            <div className="rounded-brand bg-bt-ink p-8 text-white shadow-lift transition-transform duration-500 ease-brand hover:-translate-y-1 sm:p-10">
-              <span className="inline-flex rounded-brand bg-[rgba(253,251,247,0.12)] p-4">
-                <Pill className="h-8 w-8 text-bt-rose" aria-hidden />
-              </span>
-              <h3 className="mt-6 !text-[#fdfcf9]">Comprehensive psychiatric support</h3>
-              <p className="mt-3 text-sm leading-relaxed text-bt-lavender">
-                Medication management works alongside Deep TMS, not instead of it, for adults
-                navigating complex depression and related conditions.
-              </p>
-            </div>
+            <article
+              className="medication-feature-card"
+              tabIndex={0}
+              aria-label="Comprehensive psychiatric support"
+            >
+              <div className="medication-feature-media">
+                <Image
+                  src={site.images.treatmentSession}
+                  alt="Clinician monitoring a patient during BrainsWay Deep TMS treatment"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                />
+                <div className="medication-feature-overlay">
+                  <span className="inline-flex rounded-brand bg-[rgba(253,251,247,0.12)] p-4">
+                    <Pill className="h-8 w-8 text-bt-rose" aria-hidden />
+                  </span>
+                  <h3 className="mt-5 !text-[#fdfcf9]">Comprehensive psychiatric support</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-bt-lavender">
+                    Medication management works alongside Deep TMS, not instead of it, for adults
+                    navigating complex depression and related conditions.
+                  </p>
+                </div>
+              </div>
+            </article>
           </Reveal>
 
           <Reveal className="space-y-8" delay={100}>
