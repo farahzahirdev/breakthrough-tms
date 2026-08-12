@@ -1,10 +1,41 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { site } from "@/content/site";
+import { mountAndBindGhlCalendar, unmountGhlEmbed } from "@/lib/ghlEmbed";
 import { GhlEmbed } from "./GhlEmbed";
 
 const calendar = site.ghl.calendar;
 const isPlaceholder = calendar.id.startsWith("PLACEHOLDER");
+const CALENDAR_MIN_HEIGHT = "720px";
 
 export function GhlCalendarEmbed() {
+  const hostRef = useRef<HTMLDivElement>(null);
+  const [clientReady, setClientReady] = useState(false);
+
+  useEffect(() => {
+    setClientReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!clientReady || isPlaceholder) return;
+
+    const host = hostRef.current;
+    if (!host) return;
+
+    const unbind = mountAndBindGhlCalendar(host, {
+      id: calendar.id,
+      title: calendar.title,
+      iframeId: calendar.iframeId,
+      minHeight: CALENDAR_MIN_HEIGHT,
+    });
+
+    return () => {
+      unbind();
+      unmountGhlEmbed(host);
+    };
+  }, [clientReady]);
+
   if (isPlaceholder) {
     return (
       <GhlEmbed
@@ -18,14 +49,10 @@ export function GhlCalendarEmbed() {
   }
 
   return (
-    <iframe
-      src={calendar.src}
-      id={calendar.iframeId}
-      title={calendar.title}
-      allow="payment"
-      scrolling="no"
-      className="block w-full border-0"
-      style={{ width: "100%", height: 720, minHeight: 720, overflow: "hidden" }}
+    <div
+      ref={hostRef}
+      className="w-full overflow-hidden"
+      style={{ minHeight: CALENDAR_MIN_HEIGHT }}
     />
   );
 }
