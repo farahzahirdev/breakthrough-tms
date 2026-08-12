@@ -39,6 +39,7 @@ export const site = {
   },
   images: {
     drSaakyan: "/images/dr-artur-saakyan.jpeg",
+    faqOffice: "/images/breakthrough-tms-office.webp",
     storyEmma: "/images/story-emma.webp",
     storyRonda: "/images/story-ronda.webp",
     storyCathy: "/images/story-cathy.webp",

@@ -582,7 +582,10 @@ html {
 }
 
 .hero-headline-accent {
-  color: var(--bt-accent-text);
+  background: #E892C8;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: 550;
 }
 
@@ -1375,6 +1378,33 @@ a.bt-contact-item:hover {
 }
 
 /* FAQ accordion — smooth open / close */
+/* FAQ — split image + accordion (sticky image, scrolling FAQ) */
+.faq-split-media {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .faq-split-media {
+    position: sticky;
+    top: 7rem;
+    align-self: start;
+  }
+}
+
+.faq-split-content {
+  min-width: 0;
+}
+
+@media (max-width: 1023px) {
+  .faq-split-content .bt-section-header .section-eyebrow {
+    justify-content: center;
+  }
+
+  .faq-split-content .bt-section-header {
+    text-align: center;
+  }
+}
+
 .faq-list {
   @apply border-t border-bt-line;
 }

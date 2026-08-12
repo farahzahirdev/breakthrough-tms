@@ -7,13 +7,14 @@ export function WhyChoose() {
   const icons = [Focus, ShieldCheck, Clock, Zap, Zap, MapPin];
 
   return (
-    <section id="why-choose" className="bt-section bt-section-alt">
-      <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+    <section id="why-choose" className="bt-wallpaper scroll-mt-24 bg-bt-ink py-14 sm:py-16">
+      <div className="bt-wallpaper-inner mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <Reveal>
           <SectionHeader
             eyebrow={copy.whyChoose.eyebrow}
             headline={copy.whyChoose.headline}
             body={copy.whyChoose.body}
+            dark
           />
         </Reveal>
 
