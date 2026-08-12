@@ -210,7 +210,7 @@ html {
   top: 0;
   z-index: 60;
   padding: 0.5rem clamp(1rem, 3vw, 1.75rem) 0;
-  transition: padding 0.25s ease, background 0.25s ease;
+  transition: padding 0.25s ease;
 }
 
 .bt-nav-wrap.is-scrolled {
@@ -227,11 +227,23 @@ html {
   gap: 1rem;
   padding: 0.45rem 0.65rem 0.45rem 0.85rem;
   border-radius: 999px;
-  border: 1px solid transparent;
-  background: rgba(253, 251, 247, 0.96);
-  box-shadow: 0 12px 30px -20px rgba(23, 26, 65, 0.28);
-  backdrop-filter: blur(12px);
-  transition: background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  background: linear-gradient(
+    135deg,
+    rgba(253, 251, 247, 0.68) 0%,
+    rgba(253, 251, 247, 0.48) 100%
+  );
+  box-shadow:
+    0 8px 32px rgba(23, 26, 65, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    inset 0 -1px 0 rgba(23, 26, 65, 0.04);
+  -webkit-backdrop-filter: blur(20px) saturate(165%);
+  backdrop-filter: blur(20px) saturate(165%);
+  transition:
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease,
+    backdrop-filter 0.35s ease;
 }
 
 .bt-nav-bar .logo {
@@ -241,17 +253,33 @@ html {
 }
 
 .bt-nav-bar.is-scrolled {
-  border-color: rgba(23, 26, 65, 0.08);
-  background: rgba(253, 251, 247, 0.98);
-  box-shadow: 0 16px 40px -22px rgba(23, 26, 65, 0.2);
+  border-color: rgba(255, 255, 255, 0.62);
+  background: linear-gradient(
+    135deg,
+    rgba(253, 251, 247, 0.86) 0%,
+    rgba(253, 251, 247, 0.74) 100%
+  );
+  box-shadow:
+    0 14px 40px rgba(23, 26, 65, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    inset 0 -1px 0 rgba(23, 26, 65, 0.05);
+  -webkit-backdrop-filter: blur(24px) saturate(175%);
+  backdrop-filter: blur(24px) saturate(175%);
 }
 
-/* Over hero — glass nav so image shows through */
+/* Over hero — lighter glass so imagery shows through */
 .bt-nav-wrap:not(.is-scrolled) .bt-nav-bar {
-  background: rgba(253, 251, 247, 0.5);
-  border-color: rgba(253, 251, 247, 0.38);
-  box-shadow: none;
-  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    135deg,
+    rgba(253, 251, 247, 0.34) 0%,
+    rgba(253, 251, 247, 0.18) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.42);
+  box-shadow:
+    0 8px 28px rgba(23, 26, 65, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  -webkit-backdrop-filter: blur(18px) saturate(185%);
+  backdrop-filter: blur(18px) saturate(185%);
 }
 
 .bt-nav-pill {
@@ -332,7 +360,7 @@ html {
 }
 
 .bt-nav-pill-link:hover {
-  background: var(--bt-sand);
+  background: rgba(255, 255, 255, 0.38);
   color: var(--bt-accent-ink);
 }
 
@@ -350,21 +378,38 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  border: 1px solid rgba(23, 26, 65, 0.1);
-  background: rgba(255, 254, 252, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  background: linear-gradient(
+    135deg,
+    rgba(253, 251, 247, 0.55) 0%,
+    rgba(253, 251, 247, 0.35) 100%
+  );
+  box-shadow:
+    0 4px 16px rgba(23, 26, 65, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.62);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
   color: var(--bt-ink);
   cursor: pointer;
   transition:
     background 0.2s ease,
     border-color 0.2s ease,
     color 0.2s ease,
-    transform 0.2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .bt-nav-menu-btn:hover {
-  border-color: rgba(240, 164, 212, 0.45);
-  background: var(--bt-sand);
+  border-color: rgba(240, 164, 212, 0.55);
+  background: linear-gradient(
+    135deg,
+    rgba(253, 251, 247, 0.72) 0%,
+    rgba(247, 243, 234, 0.58) 100%
+  );
   color: var(--bt-accent-ink);
+  box-shadow:
+    0 6px 20px rgba(23, 26, 65, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .bt-nav-menu-btn:active {
@@ -381,10 +426,18 @@ html {
   flex-direction: column;
   gap: 0.35rem;
   border-radius: 1.5rem;
-  border: 1px solid rgba(23, 26, 65, 0.1);
-  background: #fdfbf7;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: linear-gradient(
+    160deg,
+    rgba(253, 251, 247, 0.88) 0%,
+    rgba(253, 251, 247, 0.76) 100%
+  );
+  -webkit-backdrop-filter: blur(24px) saturate(170%);
+  backdrop-filter: blur(24px) saturate(170%);
   padding: 1.1rem 1.3rem;
-  box-shadow: 0 20px 50px -30px rgba(23, 26, 65, 0.35);
+  box-shadow:
+    0 20px 50px rgba(23, 26, 65, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 .bt-mobile-nav-label {
@@ -436,25 +489,57 @@ html {
   }
 
   .bt-nav-wrap:not(.is-scrolled) .bt-nav-bar {
-    background: rgba(253, 251, 247, 0.45);
-    border-color: rgba(255, 255, 255, 0.35);
-    box-shadow: none;
+    background: linear-gradient(
+      135deg,
+      rgba(253, 251, 247, 0.32) 0%,
+      rgba(253, 251, 247, 0.16) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 8px 28px rgba(23, 26, 65, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.52);
   }
 
   .bt-nav-wrap.is-scrolled .bt-nav-bar {
-    background: rgba(253, 251, 247, 0.94);
-    border-color: rgba(23, 26, 65, 0.08);
-    box-shadow: 0 8px 24px -18px rgba(23, 26, 65, 0.18);
+    background: linear-gradient(
+      135deg,
+      rgba(253, 251, 247, 0.9) 0%,
+      rgba(253, 251, 247, 0.78) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.58);
+    box-shadow:
+      0 10px 32px rgba(23, 26, 65, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.78);
   }
 
   .bt-nav-wrap:not(.is-scrolled) .bt-nav-menu-btn {
-    background: rgba(255, 254, 252, 0.5);
-    border-color: rgba(255, 255, 255, 0.45);
+    background: linear-gradient(
+      135deg,
+      rgba(253, 251, 247, 0.42) 0%,
+      rgba(253, 251, 247, 0.24) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.42);
   }
 
   .bt-nav-wrap.is-scrolled .bt-nav-menu-btn {
-    border-color: rgba(23, 26, 65, 0.1);
-    background: rgba(255, 254, 252, 0.95);
+    border-color: rgba(255, 255, 255, 0.52);
+    background: linear-gradient(
+      135deg,
+      rgba(253, 251, 247, 0.82) 0%,
+      rgba(253, 251, 247, 0.68) 100%
+    );
+  }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .bt-nav-bar,
+  .bt-nav-menu-btn,
+  .bt-mobile-nav {
+    background: rgba(253, 251, 247, 0.97);
+  }
+
+  .bt-nav-wrap:not(.is-scrolled) .bt-nav-bar {
+    background: rgba(253, 251, 247, 0.92);
   }
 }
 .bt-hero {
